@@ -1,0 +1,68 @@
+.games {
+  padding: 80px 0 102px 110px;
+}
+
+.games__title {
+  padding-bottom: 30px;
+  font-family: Poppins;
+  font-size: 25px;
+}
+
+.lang__selection button:focus ~ .drops__lang {
+  display: block;
+}
+
+.games__cart-items {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.images {
+  position: relative;
+}
+
+.img__overflow {
+  position: absolute;
+  background: #000;
+  width: 260px;
+  height: 393px;
+  opacity: 0.4;
+}
+
+.games__cart-items_item {
+  text-decoration: none;
+  color: #fff;
+  font-family: Poppins;
+}
+
+.games__cart-items_item h5 {
+  padding: 10px 0 20px 0;
+  font-family: "Lucida Fax", sans-serif;
+}
+
+.games__cart-items_item button {
+  background: transparent;
+  border: 1px solid #fff;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.games__cart-items_item button:hover {
+  background: #fff;
+  color: #000;
+}
+
+@media screen and (max-width: 414px) {
+  .games {
+    padding: 50px 0 0 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .games {
+    padding: 80px 0 163px 30px;
+  }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/games.css" />
+    <title>BlackBox Gaming Studio | Barcha O'yinlar</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <header>
+          <div class="header__left">
+            <div class="logo">
+              <a href="index.html">
+                <img src="./logo.png" alt="logo" />
+              </a>
+            </div>
+            <div class="header__links">
+              <ul>
+                <li><a style="color: #fff" href="games.html">O'yinlar</a></li>
+                <li><a href="team.html">Jamoa</a></li>
+                <li><a href="about.html">Haqimizda</a></li>
+                <li><a href="contact.html">Bog'lanish</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="hamburger_menu">
+            <nav class="menu--right" role="navigation">
+              <div class="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="menuItem">
+                  <!-- <div class="logo1">
+                    <a href="index.html">
+                      <img src="./logo.png" alt="" />
+                    </a>
+                  </div> -->
+
+                  <li><a href="./games.html">O'yinlar</a></li>
+                  <li><a href="team.html">Jamoa</a></li>
+                  <li><a href="about.html">Haqimizda</a></li>
+                  <li><a href="contact.html">Bog'lanish</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </header>
+      </nav>
+
+      <div class="content">
+        <div class="games">
+          <h1 class="games__title" id="btn" onclick="changeLang()">
+            Biz tomondan ishlab chiqarilgan o'yinlar
+          </h1>
+
+          <div class="games__cart-items">
+            <a
+              href="./games/the-rise-jaloliddin.html"
+              class="games__cart-items_item"
+            >
+              <div class="images">
+                <div class="img__overflow"></div>
+                <img src="../assets/cart_jaloliddin.png" width="260px" alt="" />
+              </div>
+              <h3 class="cart__title">The Rise of Jaloliddin</h3>
+              <h5>Tarixiy o'yin</h5>
+
+              <button>O'yin haqida bilish</button>
+            </a>
+            <a
+              href="./games/beyond-boundaries.html"
+              class="games__cart-items_item"
+            >
+              <div class="images">
+                <!-- <div class="img__overflow"></div> -->
+                <img src="../assets/help.png" width="260px" alt="" />
+              </div>
+              <h3 class="cart__title">Beyond Boundaries</h3>
+              <h5>...</h5>
+              <button>O'yin haqida bilish</button>
+            </a>
+          </div>
+        </div>
+
+        <footer>
+          <div class="copyright">
+            <p><a href="index.html">BlackBox Gaming Studio.</a> © 2024</p>
+          </div>
+          <div class="socials">
+            <a href="https://www.youtube.com/@blackboxstudiouz">
+              <img src="../assets/youtube.svg" alt="youtube" />
+            </a>
+            <a href="https://t.me/blackboxstudiouz">
+              <img src="../assets/telegram.svg" alt="telegram" />
+            </a>
+            <a
+              href="https://www.instagram.com/blackboxstudiouz?igshid=NzZlODBkYWE4Ng%3D%3D"
+            >
+              <img src="../assets/instagram.svg" alt="instagram" />
+            </a>
+          </div>
+        </footer>
+      </div>
+
+      <script>
+        function changeLang() {
+          var language = getCookie("lang");
+          if (test == "en") {
+            setCookie("lang", "es", 365);
+            window.location.reload();
+          } else {
+            setCookie("lang", "en", 365);
+            window.location.reload();
+          }
+        }
+      </script>
+      <script src="./main.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+.games {
+  padding: 50px 0 50px 110px;
+  font-family: Poppins;
+}
+
+.jaloliddin_text h4 {
+  padding: 20px 0 50px 0;
+  width: 1130px;
+}
+
+.image_video video {
+  width: 1010px;
+}
+
+.images img {
+  width: 500px;
+}
+
+@media screen and (max-width: 414px) {
+  .games {
+    padding: 50px 0 0 30px;
+    font-size: 12px;
+  }
+
+  .jaloliddin_text h4 {
+    width: 320px;
+  }
+
+  .image_video video {
+    width: 320px;
+  }
+
+  .images img {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .games {
+    padding: 50px 0 50px 30px;
+  }
+
+  .jaloliddin_text h4 {
+    width: 610px;
+  }
+
+  .image_video video {
+    width: 610px;
+    padding: 0 0 10px 0;
+  }
+
+  .images img {
+    width: 610px;
+  }
+}
