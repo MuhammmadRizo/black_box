@@ -773,7 +773,7 @@ footer a {
   }
 } */
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   header .header__links {
     display: none;
   }
@@ -799,6 +799,7 @@ footer a {
 
   .bg__black {
     height: 367px;
+    display: none;
   }
 
   .body__texts {
